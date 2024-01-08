@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  width: 100vw;
+  height: 5rem;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  box-shadow: 5px 5px 10px rgb(200, 200, 200);
+  background-color: white;
+  color: #7061de;
+}
+
+.header h1 {
+  cursor: pointer;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.header ul {
+  display: flex;
+  gap: 3rem;
+}
+.header ul > * {
+  cursor: pointer;
+}
+.header div {
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .header ul {
+    display: none;
+  }
+}

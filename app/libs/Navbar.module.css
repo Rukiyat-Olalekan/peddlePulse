@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  width: 100vw;
+  height: 5rem;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  background-color: linear-gradient(90deg, #7061de, #5657cc, #3d3dba 35%, #103c9a), #ebeff8;
+  color: white;
+}
+.header.active {
+  background-color: white;
+  color: #103c9a;
+  box-shadow: 5px 0 0 rgb(200, 200, 200);
+}
+
+.header.active h1 {
+  color: black;
+}
+
+.header h1 {
+  cursor: pointer;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.header ul {
+  display: flex;
+  gap: 3rem;
+}
+.header ul > * {
+  cursor: pointer;
+  font-size: 1rem;
+}
+.header div {
+  color: white;
+  cursor: pointer;
+}
+.header .menu {
+    display: none;
+}
+.menu .options {
+    color: red;
+    background-color: red;
+}
+@media screen and (max-width: 600px) {
+    .header ul {
+        display: none;
+    }
+    .header .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Adjust this based on your design */
+    }
+    .menu .options {
+        display: block;
+    }
+}

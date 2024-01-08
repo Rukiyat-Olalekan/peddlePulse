@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice:wght@400;500;600&display=swap");
+
+.about {
+  min-height: 100vh;
+  padding: 0 2rem;
+}
+.about-intro {
+  margin: 10rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+    padding: 3rem;
+}
+.header ul {
+    padding: 0 1rem;
+}
+.header .para {
+    width: 90%;
+    font-size: 1.4rem;
+}
+.header-list {
+  font-family: "Bungee+Spice", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+line-height: 1.2;
+}

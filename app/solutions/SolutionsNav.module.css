@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  background-color: #7061de;
+  border: 1px solid #7061de;
+  padding: 1rem 0.5rem;
+  border-radius: 30px;
+}
+.solution-header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.header h3 {
+  text-transform: uppercase;
+}
+.middle-header {
+  display: flex;
+  gap: 3rem;
+}
+.middle-header > * {
+  cursor: pointer;
+}

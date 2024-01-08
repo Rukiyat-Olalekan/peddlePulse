@@ -1,0 +1,16 @@
+.footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    color: white;
+    background-color: rgb(41, 40, 40);
+  }
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  .icons > * {
+    margin-right: 1rem;
+  }

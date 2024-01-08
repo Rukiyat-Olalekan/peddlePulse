@@ -1,0 +1,29 @@
+.solutions {
+    min-height: 100vh;
+    background-color: #15111b ;
+    color: white;
+    padding-bottom: 3rem;
+}
+.customers {
+    padding: 6rem 0 3rem  0;
+}
+.solution {
+    width: 90%;
+    margin: 0 auto 4rem auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clients {
+    width: 40rem;
+    min-height: fit-content;
+}
+.clients img {
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+}
+.clients p {
+width: 90%;
+}

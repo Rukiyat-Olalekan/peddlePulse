@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Permanent+Marker&family=Rubik:wght@400;500;600&display=swap");
+
+.work {
+  min-height: 100vh;
+  width: 60%;
+  margin: 6rem auto 3rem auto;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.5;
+}
+.work h3 {
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  font-size: 4rem;
+}
+.work-title {
+  font-size: 1.1rem;
+}
+.work .peddle {
+  font-weight: bold;
+}
+.form {
+  text-align: left;
+  background-color: #7061de;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+.form-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.form label,
+.form input {
+  display: block;
+  margin-top: 0.5rem;
+}
+.form input {
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.form input:focus,
+.form input:hover {
+  outline: none;
+}
+.form .name {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.form .name > * {
+  width: 100%;
+}
+.form .small {
+  color: #e5e8eb;
+}
+.check {
+  padding: 0.5rem 1rem;
+}
+.check label {
+  display: inline;
+  /* padding-left: 1rem; */
+}
+.check input {
+  display: inline;
+  width: 25px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+.pad {
+  padding-left: 0.5rem;
+}
+.button {
+    margin: 1rem 0;
+}
+.button button {
+  border: none;
+  background-color: white;
+  color: #7061de;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+.select {
+    width: 100%;
+}
+.select select{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    color: #7061de;
+    font-size: 1.1rem;
+}

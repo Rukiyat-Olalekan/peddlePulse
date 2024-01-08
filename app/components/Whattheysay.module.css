@@ -1,0 +1,52 @@
+.container {
+  color: black;
+  margin: 3rem 0;
+  padding: 1rem 0 5rem 0;
+}
+.container h2 {
+  text-align: center;
+  font-size: 2rem;  
+  margin-bottom: 1rem;
+}
+.review-block {
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #15111b;
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.reviews {
+  margin: 0 0.5rem;
+  display: inline;
+}
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.profile {
+  margin-top: 2rem;
+}
+.user-info {
+    font-size: 14px;
+}
+.bold {
+    font-weight: bold;
+}
+.icon {
+  display: inline;
+  cursor: pointer;
+}
+.stars {
+  margin: 1rem 0;
+}

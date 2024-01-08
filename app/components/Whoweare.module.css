@@ -1,0 +1,56 @@
+.whoweare {
+  color: black;
+  line-height: 2;
+  margin: 5rem auto 5rem auto;
+  width: 100%;
+}
+.whoweare h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.whoweare .introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.whoweare .intro {
+  width: 20rem;
+  min-height: fit-content;
+  height: 20rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 5px 5px 20px rgb(175, 175, 175);
+  cursor: pointer;
+}
+
+.whoweare .intro.active{
+    background-color: #7061de;
+}
+
+.whoweare .intro h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.whoweare .intro p {
+  font-size: 14px;
+  line-height: 2;
+}
+.whoweare .image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+.whoweare .image img {
+  max-width: 100%;
+  width: 600px;
+  height: 400px;
+}
+.whoweare .intro .intro-list {
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+}
