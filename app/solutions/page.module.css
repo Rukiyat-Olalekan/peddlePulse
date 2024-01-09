@@ -26,4 +26,20 @@
 }
 .clients p {
 width: 90%;
+line-height: 1.5;
+}
+@media screen and (max-width: 600px) {
+    .clients img {
+        width: 450px;
+        height: 350px;
+        border-radius: 10px;
+    }
+    .solution {
+        width: 85%;
+        margin: 0 auto 2rem auto;
+    }
+    .clients p {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
 }

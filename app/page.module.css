@@ -2,7 +2,8 @@
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  background: linear-gradient(90deg, #7061de, #5657cc, #3d3dba 80%, #103c9a), #ebeff8;
+  background: linear-gradient(90deg, #7061de, #5657cc, #3d3dba 80%, #103c9a),
+    #ebeff8;
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
   padding-bottom: 3rem;
@@ -89,9 +90,49 @@
 .author-container span {
   padding-left: 0.5rem;
 }
-
-@media screen and (max-width: 700px) {
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 600px) {
   .main {
-    background-size: 100vw 50vh;
+    background-size: 100vw 35vh;
+  }
+  .main .container {
+    padding-top: 6rem;
+  }
+  .main .lists {
+    margin-bottom: 2rem;
+  } 
+  .main ul {
+    gap: 1rem;
+  }
+  .hidden {
+    display: block;
+    text-transform: uppercase;
+    color: #7061de;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 1px solid grey;
+    padding: 0.5rem;
+  }
+  .main .data-list {
+    height: 20rem;
+  }
+  .main .data-lists {
+    width: 90%;
+    margin: 5.5rem auto 0 auto;
+    border: 1px solid #7061de;
+    padding: 2rem 1rem;
+  }
+  .main .data-list img {
+    height: 150px;
+  }
+  .main .data-list .title {
+    color: #7061de;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .main .data-list .author-container {
+    color: black;
   }
 }

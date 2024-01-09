@@ -68,12 +68,14 @@ export default function Home() {
               );
             })}
           </ul>
+
           <ul className={styles["data-lists"]}>
+            <div className={styles.hidden}>Latest from the blog</div>
             {pageData.map((data) => {
               return (
                 <li className={styles["data-list"]} key={data.id}>
+                  <img src={data.imageUrl} />
                   <Link href={data.link}>
-                    <img src={data.imageUrl} />
                     <p className={styles.title}>{data.title}</p>
                     <div className={styles["author-container"]}>
                       <p>

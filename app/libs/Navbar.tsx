@@ -7,15 +7,21 @@ import styles from "./Navbar.module.css";
 
 function layout() {
   const [scrolling, setScrolling] = useState<boolean>(false);
+  const [menuIsActive, setMenuIsActive] = useState<boolean>(false);
   const [showMenuOptions, setShowMenuOptions] = useState<boolean>(false);
 
   const handleMenu = () => {
     setShowMenuOptions(!showMenuOptions);
-    console.log("clicked!!!")
+    if (showMenuOptions) {
+      setMenuIsActive(true);
+    } else {
+      setMenuIsActive(false);
+    }
   };
   useEffect(() => {
     const handleScroll = () => {
       setScrolling(window.scrollY > 0);
+      setShowMenuOptions(false);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -46,13 +52,28 @@ function layout() {
       </ul>
       <div className={styles.menu}>
         <button onClick={handleMenu}>
-          <FontAwesomeIcon icon={faBars} size="2x" />
+          <FontAwesomeIcon
+            icon={faBars}
+            size="2x"
+            style={{ color: "white" }}
+            className={styles.icon}
+          />
         </button>
         {showMenuOptions && (
-          <ul className={styles.options}>
-            <li>solutions</li>
-            <li>blog</li>
-            <li>about us</li>
+          <ul
+            className={`${styles.options} ${
+              menuIsActive ? styles["menu-active"] : ""
+            }`}
+          >
+            <li>
+              <Link href="/solutions">solutions</Link>
+            </li>
+            <li>
+              <Link href="/blog">blog</Link>
+            </li>
+            <li>
+              <Link href="/about">about us</Link>
+            </li>
           </ul>
         )}
       </div>

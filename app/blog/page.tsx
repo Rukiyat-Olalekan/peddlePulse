@@ -1,18 +1,28 @@
+"use client"
+import { useState } from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import BlogNav from "./BlogNav";
-import { pageData } from "../libs/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { pageData } from "../libs/data";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 
 function page() {
+
+ 
+
   return (
     <section className={styles.blog}>
       <BlogNav />
       <div className={styles["blog-div"]}>
         <div className={styles["blog-lists"]}>
           <h3 className={styles.pulse}>Peddle pulse blog</h3>
+          <div className={styles.hidden}>
+            Check out all our blog posts
+            <FontAwesomeIcon icon={faArrowDown} className={styles.icon} />{" "}
+          </div>
           <ul className={styles["data-lists"]}>
             {pageData.map((data) => {
               return (

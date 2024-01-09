@@ -9,7 +9,14 @@
   padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
-  background-color: linear-gradient(90deg, #7061de, #5657cc, #3d3dba 35%, #103c9a), #ebeff8;
+  background-color: linear-gradient(
+      90deg,
+      #7061de,
+      #5657cc,
+      #3d3dba 35%,
+      #103c9a
+    ),
+    #ebeff8;
   color: white;
 }
 .header.active {
@@ -41,22 +48,56 @@
   cursor: pointer;
 }
 .header .menu {
-    display: none;
-}
-.menu .options {
-    color: red;
-    background-color: red;
+  display: none;
 }
 @media screen and (max-width: 600px) {
-    .header ul {
-        display: none;
-    }
-    .header .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end; /* Adjust this based on your design */
-    }
-    .menu .options {
-        display: block;
-    }
+  .header.active {
+    background-color: #7061de;
+  }
+  .header ul {
+    display: none;
+  }
+  .header .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header.active h1 {
+    color: white;
+  }
+  .menu button {
+    position: fixed;
+    top: 30px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  .header.active,
+  .menu .icon {
+    color: black;
+  }
+  .menu .options {
+    display: block;
+    margin: 15rem 0 0 0;
+    position: relative;
+    color: black;
+    background-color: aliceblue;
+    padding: 1rem 2rem 4rem 1rem;
+    font-weight: bold;
+    width: 300px;
+  }
+  .menu .options.menu-active {
+    animation: slidein 200ms linear;
+  }
+  .menu .options li {
+    margin-top: 0.5rem;
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
