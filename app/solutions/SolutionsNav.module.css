@@ -48,14 +48,16 @@
   .menu .options {
     display: block;
     margin-top: 15rem;
+    margin-top: 3rem;
     position: absolute;
-    top: 40px;
-    right: 3px;
+    top: 0;
+    right: 10px;
     color: black;
     background-color: aliceblue;
     padding: 1rem 2rem 4rem 1rem;
     font-weight: bold;
     width: 300px;
+    line-height: 3;
   }
   
 }

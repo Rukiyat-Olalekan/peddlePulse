@@ -66,6 +66,9 @@ function AboutNav() {
             <li>
               <Link href="/about">about us</Link>
             </li>
+            <li>
+                <Link href="/work">work with us</Link>
+              </li>
           </ul>
         )}
       </div>

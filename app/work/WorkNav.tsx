@@ -63,6 +63,9 @@ function WorkNav() {
             </li>
             <li>
               <Link href="/about">about us</Link>
+              <li>
+                <Link href="/work">work with us</Link>
+              </li>
             </li>
           </ul>
         )}
