@@ -93,9 +93,23 @@
 .hidden {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .main {
-    background-size: 100vw 35vh;
+    background-size: 100vw 40vh;
+  }
+  .main .content-lists {
+    gap: 1rem 0.5rem;
+  }
+  .main .data-lists {
+    color: black;
+  }
+  .main .data-list .title {
+    color: #7061de;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main {
+    background-size: 100vw 40vh;
   }
   .main .container {
     padding-top: 6rem;
@@ -106,6 +120,9 @@
   .main ul {
     gap: 1rem;
   }
+  .main .content-lists {
+    gap: 1rem 0.5rem;
+  }
   .hidden {
     display: block;
     text-transform: uppercase;
@@ -115,14 +132,15 @@
     border: 1px solid grey;
     padding: 0.5rem;
   }
-  .main .data-list {
-    height: 20rem;
-  }
+
   .main .data-lists {
     width: 90%;
-    margin: 5.5rem auto 0 auto;
+    margin: 7rem auto 0 auto;
     border: 1px solid #7061de;
     padding: 2rem 1rem;
+  }
+  .main .data-list {
+    height: fit-content;
   }
   .main .data-list img {
     height: 150px;

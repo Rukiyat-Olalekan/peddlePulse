@@ -14,3 +14,16 @@
   .icons > * {
     margin-right: 1rem;
   }
+@media screen and (max-width: 450px) {
+  .footer {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .icons > * {
+    margin-bottom: 1rem;
+  }
+}

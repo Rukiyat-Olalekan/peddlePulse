@@ -2,26 +2,53 @@
 
 .about {
   min-height: 100vh;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .about-intro {
-  margin: 10rem auto 0 auto;
+  margin: 7rem auto 1rem auto;
   display: flex;
   justify-content: space-between;
 }
 .header {
-    padding: 3rem;
+  padding: 3rem;
 }
 .header ul {
-    padding: 0 1rem;
-}
-.header .para {
-    width: 90%;
-    font-size: 1.4rem;
+  padding: 0 1rem;
 }
 .header-list {
   font-family: "Bungee+Spice", sans-serif;
   font-weight: 600;
   font-size: 4rem;
-line-height: 1.2;
+  line-height: 1.2;
+}
+.header .para {
+  width: 90%;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    margin: auto;
+  }
+  .about-intro {
+    margin: 5rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    padding: 0.5rem;
+  }
+  .header ul {
+    padding: 0 0.5rem;
+  }
+  .header-list {
+    padding-right: 0.5rem;
+  }
+  .video-div {
+    margin: 0;
+  }
+  .video {
+    width: 100%;
+    height: 400px;
+  }
 }

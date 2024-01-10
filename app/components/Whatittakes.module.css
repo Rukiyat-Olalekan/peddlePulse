@@ -24,3 +24,12 @@
   border-color: black;
   border-radius: 10px;
 }
+@media screen and (max-width: 450px) {
+  .contact {
+    margin-bottom: 1rem;
+  }
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+  
+}

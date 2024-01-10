@@ -1,5 +1,3 @@
-"use client"
-import { useState } from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import BlogNav from "./BlogNav";
@@ -10,9 +8,6 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 
 function page() {
-
- 
-
   return (
     <section className={styles.blog}>
       <BlogNav />
@@ -21,7 +16,9 @@ function page() {
           <h3 className={styles.pulse}>Peddle pulse blog</h3>
           <div className={styles.hidden}>
             Check out all our blog posts
-            <FontAwesomeIcon icon={faArrowDown} className={styles.icon} />{" "}
+            <span className={styles["down-arrow"]}>
+              <FontAwesomeIcon icon={faArrowDown} className={styles.icon} />
+            </span>{" "}
           </div>
           <ul className={styles["data-lists"]}>
             {pageData.map((data) => {
@@ -38,21 +35,23 @@ function page() {
                       </p>
                       <p className={styles.description}>{data.article}</p>
                     </div>
-                    <button className={styles.button}>
-                      <p className={styles["article-para"]}>
-                        <Link href={data.links}>Read Article</Link>
-                        <span className={styles.space}>
-                          <FontAwesomeIcon
-                            icon={faGreaterThan}
-                            className={styles["article-icon"]}
-                          />
-                          <FontAwesomeIcon
-                            icon={faGreaterThan}
-                            className={styles["article-icon"]}
-                          />
-                        </span>
-                      </p>
-                    </button>
+                    <div className={styles["button-div"]}>
+                      <button className={styles.button}>
+                        <p className={styles["article-para"]}>
+                          <Link href={data.links}>Read Article</Link>
+                          <span className={styles.space}>
+                            <FontAwesomeIcon
+                              icon={faGreaterThan}
+                              className={styles["article-icon"]}
+                            />
+                            <FontAwesomeIcon
+                              icon={faGreaterThan}
+                              className={styles["article-icon"]}
+                            />
+                          </span>
+                        </p>
+                      </button>
+                    </div>
                   </div>
                 </li>
               );

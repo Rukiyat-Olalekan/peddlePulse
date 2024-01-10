@@ -18,6 +18,7 @@
     ),
     #ebeff8;
   color: white;
+  z-index: 2;
 }
 .header.active {
   background-color: white;

@@ -1,36 +1,69 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: capitalize;
-    width: 100vw;
-    height: 5rem;
-    margin: auto;
-    padding: 0.5rem 1rem;
-    position: fixed;
-    top: 0;
-    color: #7061de;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  width: 100vw;
+  height: 5rem;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  color: #7061de;
+  background-color: white;
+  z-index: 2;
+}
 
+.header h1 {
+  cursor: pointer;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.header ul {
+  display: flex;
+  gap: 3rem;
+}
+.header ul > * {
+  cursor: pointer;
+  font-size: 1rem;
+}
+.menu {
+  display: none;
+}
+  @media screen and (max-width: 450px) {
+    .header ul {
+      display: none;
+    }
+    .header .menu {
+      display: block;
+    }
+    .menu button {
+      position: fixed;
+      top: 23px;
+      right: 30px;
+      background-color: inherit;
+      border: none;
+      cursor: pointer;
+    }
+    .header.active,
+    .menu .icon {
+      color: black;
+    }
+    .menu .options {
+      display: block;
+      margin-top: 10rem;
+      position: relative;
+      top: 0;
+      right: 3px;
+      color: black;
+      background-color: aliceblue;
+      padding: 1rem 2rem 4rem 1rem;
+      font-weight: bold;
+      width: 300px;
+    }
+    .icon {
+      color: #7061de;
+    }
   }
-
-  .header h1 {
-    cursor: pointer;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-  }
-  .header ul {
-    display: flex;
-    gap: 3rem;
-  }
-  .header ul > * {
-    cursor: pointer;
-    font-size: 1rem;
-  }
-
-  @media screen and (max-width: 600px) {
-      .header ul {
-          display: none;
-      }
-  }
+  

@@ -24,6 +24,8 @@
   background-color: #7061de;
   padding: 0.5rem 1rem;
   color: white;
+  width: 100%;
+  margin: auto;
 }
 .form-title {
   margin-bottom: 1rem;
@@ -78,7 +80,7 @@
   padding-left: 0.5rem;
 }
 .button {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 .button button {
   border: none;
@@ -91,12 +93,25 @@
   cursor: pointer;
 }
 .select {
-    width: 100%;
+  width: 100%;
 }
-.select select{
-    margin-top: 1rem;
-    padding: 0.5rem 2rem;
-    width: 100%;
-    color: #7061de;
-    font-size: 1.1rem;
+.select select {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  color: #7061de;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 450px) {
+  .work {
+    width: 98%;
+  }
+  .work h3 {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .form input {
+    padding: 0.5rem;
+  }
 }

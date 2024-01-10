@@ -23,4 +23,39 @@
 .middle-header > * {
   cursor: pointer;
 }
-
+.header .menu {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .header ul {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+  }
+  .menu button {
+    position: fixed;
+    top: 23px;
+    right: 30px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  .header.active,
+  .menu .icon {
+    color: black;
+  }
+  .menu .options {
+    display: block;
+    margin-top: 15rem;
+    position: absolute;
+    top: 40px;
+    right: 3px;
+    color: black;
+    background-color: aliceblue;
+    padding: 1rem 2rem 4rem 1rem;
+    font-weight: bold;
+    width: 300px;
+  }
+  
+}

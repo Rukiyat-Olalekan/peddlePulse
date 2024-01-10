@@ -21,9 +21,10 @@ function layout() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolling(window.scrollY > 0);
-      scrolling && setShowMenuOptions(false);
+      setShowMenuOptions(false);
     };
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -52,7 +53,6 @@ function layout() {
           <FontAwesomeIcon
             icon={faBars}
             size="2x"
-            style={{ color: "white" }}
             className={styles.icon}
           />
         </button>
